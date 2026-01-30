@@ -1,10 +1,11 @@
 using System;
 class sum{
 	static void Main(){
-		int a=10;
-		int b=20;
-		Console.WriteLine("value of a="+a);
-		Console.WriteLine("value of b="+b);
-		Console.WriteLine("sum is="+(a+b));
+		dynamic a,b;
+		Console.WriteLine("enter value of a");
+		a=Convert.ToInt64(Console.ReadLine());
+		Console.WriteLine("enter value of b");
+		b=Convert.ToInt64(Console.ReadLine());
+		Console.WriteLine("sum="+(a+b));
 	}
 }
