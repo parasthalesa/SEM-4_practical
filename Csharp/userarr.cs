@@ -19,8 +19,8 @@ class userarray{
 		}
 		// print sum of element
 		for(int i=0;i<arr.Length;i++){
-			total=arr[i]+arr.Length-1;
-			if(i<arr.length-1)
+			int total=arr[i]+arr.Length-1;
+			if(i<arr.Length-1)
 				Console.WriteLine("total sum of element="+total);
 
 		}
