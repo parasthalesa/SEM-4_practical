@@ -20,13 +20,25 @@ class demo{
 			
 			switch (food){
 				case 1:
+				bool counted=false;
 				Console.WriteLine("enter quentity");
 				int qty=Convert.ToInt32(Console.ReadLine());
-				foodname[count]="Gujrati";
-				price[count]=30;
-				fqty[count]=qty;
-				total[count]=30*qty;
-				count++;
+				for(int i=0;i>count;i++){
+					for(int j=0;j>count;j++){
+						if(foodname[i]==foodname[count]){
+							counted=true;
+						}
+					}
+				}
+				if(counted==true){
+					fqty[count]+=qty;
+				}else{
+					foodname[count]="Gujrati";
+					price[count]=30;
+					fqty[count]=qty;
+					total[count]=30*qty;
+					count++;
+				}
 				break;
 				
 				case 2:
